@@ -1,0 +1,179 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-image: url("https://source.unsplash.com/1600x900/?nubra-valley");
+            background-color: rgb(23, 25, 26);
+            font-family: 'Open Sans', sans-serif;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+        }
+        
+        .main {
+            background-color: rgba(7, 7, 7, 0.486);
+            border-radius: 20px;
+            max-width: 420px;
+            width: 100%;
+            padding: 3em;
+            max-height: 420px;
+            margin: 1em;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .main:hover {
+            background-color: rgba(7, 7, 7, 0.400);
+        }
+        
+        input.search-box {
+            font-size: 30px;
+            text-align: center;
+        }
+        
+        input:focus::placeholder {
+            opacity: 0;
+        }
+        
+        input:focus.search-box {
+            background-color: rgba(0, 0, 0, 0);
+        }
+        
+        .search .search-box {
+            padding: 15px;
+            width: 100%;
+            max-width: 100%;
+            border: none;
+            border-radius: 30px;
+            background-color: rgba(0, 0, 0, 0.315);
+            outline: none;
+        }
+        
+        .search-box {
+            color: white;
+            text-transform: capitalize;
+        }
+        
+        .search-box::placeholder {
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        .search-box:hover {
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+            transition: ease-in-out 0.3s;
+        }
+        
+        .btn {
+            padding: 14px;
+            border: none;
+            border-radius: 30px;
+            background-color: rgba(255, 255, 255, 0.485);
+            margin-top: 10px;
+        }
+        
+        button.btn {
+            font-size: 18px;
+        }
+        
+        .btn:hover {
+            color: white;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.173);
+            transition: ease-in-out 0.3s;
+        }
+        
+        .city {
+            font-size: 42px;
+            color: white;
+            /* padding: 10px; */
+            text-shadow: 2px 3px rgba(0, 0, 0, 0.521);
+            font-weight: 1;
+        }
+        
+        .temp {
+            font-size: 50px;
+            text-align: center;
+            color: white;
+            /* padding-top: 5px; */
+            text-shadow: 2px 3px rgba(0, 0, 0, 0.521);
+            font-weight: 500;
+        }
+        
+        .weather {
+            color: white;
+            font-size: 30px;
+            /* padding-top: 5px; */
+            text-transform: capitalize;
+        }
+        
+        .hi-low {
+            color: white;
+            font-size: 25px;
+            /* padding-top: 5px; */
+        }
+        
+        .humidity {
+            color: white;
+            font-size: 30px;
+        }
+        
+        .wind {
+            color: white;
+            font-size: 30px;
+            text-transform: capitalize;
+        }
+        
+        @media screen and (max-width: 600px) {
+            body {
+                background-image: linear-gradient(teal, royalblue);
+                margin-left: 0px;
+            }
+            .main {
+                max-width: 320px;
+                width: 100%;
+                padding: 3em;
+                max-height: 320px;
+                margin: 1em;
+                height: 100%;
+                overflow: auto;
+            }
+        }
+        
+        @media screen and (max-width: 1450px) {
+            body {
+                background-image: linear-gradient(rgb(255, 253, 253), pink);
+                margin-left: 0px;
+            }
+            .main {
+                max-width: 320px;
+                width: 100%;
+                padding: 3em;
+                max-height: 510px;
+                margin: 1em;
+                height: 100%;
+                overflow: auto;
+            }
+        }
+        
+        @media screen and (max-width: 425px) {
+            body {
+                background-image: linear-gradient(teal, royalblue);
+            }
+            .main {
+                max-width: 300px;
+                width: 100%;
+                padding: 3em;
+                margin: 1em;
+                height: 100%;
+                max-height: 550px;
+                overflow: auto;
+            }
+        }
